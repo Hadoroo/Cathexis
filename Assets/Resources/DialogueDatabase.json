@@ -1,18 +1,58 @@
 {
     "Location": [
         {
-            "Name": "PoliceStation",
+            "Name": "PoliceStation1",
             "Content": [
                 {
                     "Initiator": "OfficerMitt",
                     "Dialogues": [
                         {
                             "Speaker": "OfficerMitt",
-                            "Text": "Test"
+                            "Text": "Sampai juga kau detektif jekyll, ada kasus yang perlu ditangani"
                         },
                         {
                             "Speaker": "Player",
-                            "Text": "test0"
+                            "Text": "ada kejadian apa kali ini?"
+                        },
+                        {
+                            "Speaker": "OfficerMitt",
+                            "Text": "kenapa itu bulu kau, seperti ketumpahan jus wortel"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "Lupakan saja, sebaiknya jelaskan kasusnya"
+                        },
+                        {
+                            "Speaker": "OfficerMitt",
+                            "Text": "Pencurian, kerusakan properti, dan kebakaran toko. Lagi-lagi kucing oren jadi tersangka utama. Warga sudah mulai resah"
+                        },
+                        {
+                            "Speaker": "Player",
+                            "Text": "hmmm tetapi ada yang aneh dari kasus ini"
+                        },
+                        {
+                            "Speaker":"OfficerMitt",
+                            "Text": "apa yang aneh?"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "keributan seperti ini hanya karena seekor kucing oren?, hampir tidak mungkin"
+                        },
+                        {
+                            "Speaker":"OfficerMitt",
+                            "Text": "biasalah kelakuan oren"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"hey, jangan begitu, pelakunya belum terbukti"
+                        },
+                        {
+                            "Speaker":"OfficerMitt",
+                            "Text":"hehe maaf maaf, lagipula ini tugasmu untuk mencari tahu, segera laksanakan"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"baiklah saya akan ke lokasi kejadian pertama"
                         }
                     ]
                 }
@@ -26,11 +66,19 @@
                     "Dialogues": [
                         {
                             "Speaker": "Greys",
-                            "Text": "Test"
+                            "Text": "halo detektif Jekyll, saya detektif greys saya telah diposisikan di kasus ini sebagai asisten anda"
                         },
                         {
                             "Speaker": "Player",
-                            "Text": "test0"
+                            "Text": "oh, saya tidak ekspek ada bantuan, saya kira saya akan bekerja sendiri"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text": "saya juga berpikir saya akan menyantai di kantor heheh"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"yasudah, sebaiknya kita mulai"
                         }
                     ]
                 },
@@ -39,11 +87,12 @@
                     "Dialogues": [
                         {
                             "Speaker": "Fisherman",
-                            "Text": "Test"
+                            "Text": "Detektif! Toko saya dirampok! Satu kotak ikan asin hilang dan banyak kotak yang rusak!"
+
                         },
                         {
-                            "Speaker": "Player",
-                            "Text": "test0"
+                            "Speaker": "Greys",
+                            "Text": "apakah anda melihat pelakunya?"
                         }
                     ]
                 }
