@@ -7,6 +7,7 @@ public class PlayerBehavior : MonoBehaviour
     public float moveSpeed = 8f;
 
     public Animator animator;
+    private bool isInDialogue = false;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class PlayerBehavior : MonoBehaviour
         // Horizontal movement
         float inputX = Input.GetAxisRaw("Horizontal");
 
-        if (inputX != 0)
+        if (inputX != 0 && !isInDialogue)
         {
             Vector3 scale = transform.localScale;
             scale.x = Mathf.Sign(inputX);
@@ -35,6 +36,12 @@ public class PlayerBehavior : MonoBehaviour
             animator.SetBool("isWalking", false);
         }
 
-        rb.linearVelocity = new Vector2(inputX * moveSpeed, rb.linearVelocity.y);
+        if (!isInDialogue)rb.linearVelocity = new Vector2(inputX * moveSpeed, rb.linearVelocity.y);
+    }
+
+
+    public void setInDialogue()
+    {
+        isInDialogue = !isInDialogue;
     }
 }

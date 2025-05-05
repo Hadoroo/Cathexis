@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI speakerText;
     public TextMeshProUGUI dialogueText;
     public Button continueButton;
+    public Image charImage;
+
     
     private NPCDialogue currentNPC;
     private int currentDialogueSet = 0;
@@ -44,6 +46,7 @@ public class DialogueManager : MonoBehaviour
         
         speakerText.text = line.speaker;
         dialogueText.text = line.text;
+        charImage.sprite = Resources.Load<Sprite>(currentNPC.npcID);
     }
     
     public void ContinueDialogue()
