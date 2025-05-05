@@ -11,7 +11,7 @@ public class NPCDialogue : MonoBehaviour
 
     public Dialogue dialogueSO;
 
-    public Dictionary<string, List<(string Speaker, string Text)>> dialogueDictionary = new Dictionary<string, List<(string, string)>>();
+    public List<(int dialogueNum, List<(string speaker, string text)> dialogues)> dialogueDictionary = new List<(int, List<(string, string)>)>();
 
     void Start()
     {
@@ -23,43 +23,43 @@ public class NPCDialogue : MonoBehaviour
         string soPath = "ScriptableObjects/" + transform.parent.name;
         dialogueSO = Resources.Load<Dialogue>(soPath);
 
-        foreach (var actors in dialogueDatabase.Actor)
-        {
-            if (actors.Name == transform.parent.name)
-            {
-                foreach (var content in actors.Content)
-                {
-                    if (content.Location == SceneManager.GetActiveScene().name)
-                    {
-                        foreach (var dialogues in content.Dialogue)
-                        {
-                            dialogueDictionary[dialogues.Queue].Add(dialogues.Speaker, dialogues.Text);
+        int dialogueNum = 0;
 
+        foreach (var location in dialogueDatabase.Location)
+        {
+            if (location.Name == SceneManager.GetActiveScene().name)
+            {
+                foreach (var content in location.Content)
+                {
+                    if (content.Initiator == transform.parent.name)
+                    {
+                        var dialogueList = new List<(string speaker, string text)>();
+
+                        foreach (var dialogue in content.Dialogues)
+                        {
+                            dialogueList.Add((dialogue.Speaker, dialogue.Text));
                         }
+
+                        dialogueDictionary.Add((dialogueNum, dialogueList));
+                        dialogueNum++;
                     }
                 }
             }
         }
 
         string queue = "0";
-        
 
-        if (dialogueDictionary.TryGetValue(queue, out var speakerDict))
+        foreach (var dialoguePair in dialogueDictionary)
         {
-            Debug.Log(speakerDict.value());
-            // if (speakerDict.TryGetValue(speaker, out string text))
-            // {
-            //     Debug.Log(text); // Output: The dialogue text
-            // }
-            // else
-            // {
-            //     Debug.LogWarning($"Speaker '{speaker}' not found in queue '{queue}'.");
-            // }
+            foreach (var line in dialoguePair.dialogues)  // dialogues is the List<(string, string)>
+            {
+                Debug.Log($"{line.speaker}: {line.text}");  // Access tuple elements correctly
+            }   
+
         }
-        else
-        {
-            Debug.LogWarning($"Queue '{queue}' not found.");
-        }
+
+
+
     }
 
     private void OnTriggerStay2D(Collider2D other)

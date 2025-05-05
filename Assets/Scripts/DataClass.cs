@@ -1,31 +1,28 @@
-using System;
 using System.Collections.Generic;
-using UnityEngine;
 
-[Serializable]
-public class DialogueLine
-{
-    public string Queue;
-    public string Speaker;
-    public string Text;
-}
-
-[Serializable]
-public class DialogueLocation
-{
-    public string Location;
-    public List<DialogueLine> Dialogue;
-}
-
-[Serializable]
-public class ActorData
-{
-    public string Name;
-    public List<DialogueLocation> Content;
-}
-
-[Serializable]
+[System.Serializable]
 public class DialogueDatabase
 {
-    public List<ActorData> Actor;
+    public List<Location> Location;
+}
+
+[System.Serializable]
+public class Location
+{
+    public string Name;
+    public List<Content> Content;
+}
+
+[System.Serializable]
+public class Content
+{
+    public string Initiator;
+    public List<Dialogues> Dialogues;
+}
+
+[System.Serializable]
+public class Dialogues
+{
+    public string Speaker;
+    public string Text;
 }

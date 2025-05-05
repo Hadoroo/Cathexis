@@ -1,33 +1,16 @@
 {
-    "Actor": [
+    "Location": [
         {
-            "Name": "OfficerMitt",
+            "Name": "PoliceStation",
             "Content": [
                 {
-                    "Location": "PoliceStation",
-                    "Dialogue": [
+                    "Initiator": "OfficerMitt",
+                    "Dialogues": [
                         {
-                            "Queue" : "0",
                             "Speaker": "OfficerMitt",
                             "Text": "Test"
                         },
                         {
-                            "Queue" : "1",
-                            "Speaker": "Player",
-                            "Text": "test0"
-                        }
-                    ]
-                },
-                {
-                    "Location": "PoliceStation",
-                    "Dialogue": [
-                        {
-                            "Queue" : "0",
-                            "Speaker": "OfficerMitt",
-                            "Text": "Test"
-                        },
-                        {
-                            "Queue" : "1",
                             "Speaker": "Player",
                             "Text": "test0"
                         }
@@ -36,33 +19,29 @@
             ]
         },
         {
-            "Name": "Greys",
+            "Name": "Meowdura",
             "Content": [
                 {
-                    "Location": "PoliceStation",
-                    "Dialogue": [
+                    "Initiator": "Greys",
+                    "Dialogues": [
                         {
-                            "Queue" : "0",
-                            "Speaker": "OfficerMitt",
+                            "Speaker": "Greys",
                             "Text": "Test"
                         },
                         {
-                            "Queue" : "1",
                             "Speaker": "Player",
                             "Text": "test0"
                         }
                     ]
                 },
                 {
-                    "Location": "PoliceStation",
-                    "Dialogue": [
+                    "Initiator": "Fisherman",
+                    "Dialogues": [
                         {
-                            "Queue" : "0",
-                            "Speaker": "OfficerMitt",
+                            "Speaker": "Fisherman",
                             "Text": "Test"
                         },
                         {
-                            "Queue" : "1",
                             "Speaker": "Player",
                             "Text": "test0"
                         }
