@@ -12,11 +12,11 @@
                         },
                         {
                             "Speaker": "Player",
-                            "Text": "ada kejadian apa kali ini?"
+                            "Text": "Ada kejadian apa kali ini?"
                         },
                         {
                             "Speaker": "OfficerMitt",
-                            "Text": "kenapa itu bulu kau, seperti ketumpahan jus wortel"
+                            "Text": "kenapa itu bulu kau, seperti ketumpahan jus"
                         },
                         {
                             "Speaker":"Player",
@@ -93,6 +93,307 @@
                         {
                             "Speaker": "Greys",
                             "Text": "apakah anda melihat pelakunya?"
+                        },
+                        {
+                            "Speaker":"Fisherman",
+                            "Text":"tentu saja! Si oren itu pikir saya tidak melihatnya merusak kotak kotak saya dan mengambil ikan, setelah itu dia lari entah kemana"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "hmmmm… bekas cakar dimana mana, toko diberantaki"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "(seperti kasus pencarian pada umumnya) Baiklah akan kami catat, terimakasih informasinya"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Terdengar seperti kasus pencarian pada umumnya, ayo lanjut ke lokasi berikut"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name":"ToolShop",
+            "Content":[
+                {
+                    "Initiator": "ShopOwner",
+                    "Dialogues":[
+                        {
+                            "Speaker": "Greys",
+                            "Text": "Halo! saya detektif greys dan ini partner saya detektif jekyll dari kantor polisi, boleh tolong beri kronologi kejadian disini?"
+                        },
+                        {
+                            "Speaker":"ShopOwner",
+                            "Text":"Boleh sekali pak, pada malam itu saya mau menutup toko, tiba tiba saya mendengar suara di luar"
+                        },
+                        {
+                            "Speaker":"ShopOwner",
+                            "Text": "Ketika saya hendak mengecek suara tersebut, tiba tiba ada yang memukul saya."
+                        },
+                        {
+                            "Speaker":"ShopOwner",
+                            "Text":"Sebelum saya pingsan saya melihatnya merusak barang barang disini dan mengambil beberapa barang"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text": "apakah anda lihat pelakunya seperti apa?"
+                        },
+                        {
+                            "Speaker":"ShopOwner",
+                            "Text": "penglihatan saya saat itu sudah mulai buram jadi saya tidak melihat apa apa"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"hmmmm"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"akh hampir saja dapat petunjuk"
+                        },
+                        {
+                            "Speaker":"ShopOwner",
+                            "Text":"oh, tetapi saya melihat dia memiliki luka di tangan kirinya"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "oh? baiklah akan kami catat"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"Barang apa saja yang dicuri?"
+                        },
+                        {
+                            "Speaker": "ShopOwner",
+                            "Text":"korek api, cat warna oranye, gas masak, dan bensin dari mobil saya"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"baiklah akan kami catat, terimakasih"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"ayo lanjut ke lokasi berikutnya"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"kita tidak perlu ke lokasi berikutnya"
+                        },
+                        {
+                            "Speaker": "Greys",
+                            "Text": "hm, kenapa begitu?"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"sebaiknya kita kembali ke kantor terlebih dahulu, kita periksa ulang bukti yang sudah dikumpulkan"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"oke..? Baiklah"
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "Name":"PoliceStation2",
+            "Content":[
+                {
+                    "Initiator":"Greys",
+                    "Dialogues":[
+                        {
+                            "Speaker":"Player",
+                            "Text":"oke mari kita cek apa saja yang telah kita kumpulkan"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"sebentar, apa yang kau maksud dengan ini, mengapa kita tidak ke tempat kejadian terakhir"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":" oh itu, coba kau sebutkan dulu bukti yang telah dikumpulkan"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"oke..? pertama di pasar satu kotak ikan hilang dicuri serta toko diacak-acak, pedagang juga melihat dia warna oren"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"lalu di toko peralatan korek api, cat, gas, dan bensin"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"korek api, gas, bensin, serta kerusakan di toko, lalu kebakaran di tempat terakhir"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "dari sini kita dapat berasumsi bahwa mereka dilakukan oleh kucing yang sama"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"*sigh* walau tidak mengenakan tapi sepertinya pelakunya memang kucing oren"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"tapi ada yang aneh, jika hanya kerusuhan kucing oren"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"mengapa membuat kekacauan sebesar ini?, mencuri ikan tetapi merusak toko?, membakar tempat? tidak masuk akal"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"kita akan mengetahui alasannya setelah kita menangkap pelakunya"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"saya akan menanyakan warga sekitar. kita kumpul lagi besok pagi"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"siap detektif Jekyll"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name":"Bar",
+            "Content":[
+                {
+                    "Initiator":"Bartender",
+                    "Dialogues":[
+                        {
+                            "Speaker":"Player",
+                            "Text":"satu teh catnip ya"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"siap bos"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"*sigh*"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"apa yang mengganggu pikiranmu tuan detektif?"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"apakah anda sudah dengar kabar tentang kerusuhan?"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"oh itu sudah, ada apa ya?"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"satu satunya petunjuk yang ada hanya warna pelakunya, oren tidak ada petunjuk yang mengarah ke identitas pelakunya"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"heh, memang oren oren itu selalu saja berulah. tetapi.. saya jadi teringat sesuatu"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"hm, apa itu?"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"ada salah satu pelanggan disini akhir akhir ini agak mencurigakan dan dia berwarna oren"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Saya mendengarkan.."
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"*berbisik*ia setiap hari datang dan biasanya selalu memojok dan menutup diri, dan Ketika kejadian kemarin berlangsung dia tidak ada disini"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"*menunjuk* lihat, itu dia yang sedang dipojok"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"baiklah terimakasih informasinya"
+                        }
+                        
+                    ]
+                },
+                {
+                    "Initiator": "Hyde",
+                    "Dialogues":[
+                        {
+                            "Speaker":"Player",
+                            "Text":"halo, bolehkah saya bertanya sedikit?"
+                        },
+                        {
+                            "Speaker":"Hyde",
+                            "Text":"*mabuk*hah, jangan ganggu"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Maaf saya tidak akan lama"
+                        },
+                        {
+                            "Speaker":"Hyde",
+                            "Text":"hahh yasudah tolong cepat"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Siapa nama anda kalau boleh tau?"
+                        },
+                        {
+                            "Speaker":"Hyde",
+                            "Text":"Hyde"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"baik, Kenapa anda tidak ke tempat ini 2 hari terakhir?"
+                        },
+                        {
+                            "Speaker":"Hyde",
+                            "Text":"Terserah saya mau kemana, ini hidup saya"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "kalau begitu dimana anda 2 hari terakhir ini"
+                        },
+                        {
+                            "Speaker":"Hyde",
+                            "Text":"pertanyaan macam apa ini tidak jelas sekali"
+                        },
+                        {
+                            "Speaker":"Hyde",
+                            "Text":"*kaget* anda polisi!? *lari*"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"ah, kabur dia"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"berhenti berlari! anda akan dibawa ke kantor polisi karena telah membuat kerusuhan di kota ini"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"*menabrak hyde*"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "kerja bagus greys. tahu dari mana saya disini?"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"saya kebetulan disini sedang menanyakan warga"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"begitu kah? ayo bawa ke kantor polisi"
                         }
                     ]
                 }
