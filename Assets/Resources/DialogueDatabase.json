@@ -398,6 +398,145 @@
                     ]
                 }
             ]
+        },
+        {
+            "Name":"PoliceStation3",
+            "Content":[
+                {
+                    "Initiator":"Greys",
+                    "Dialogues":[
+                        {
+                            "Speaker":"Player",
+                            "Text":"bagaimana teman kita satu ini?"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"nama dia hyde, dia warga kota ini dari lahir dan ternyata sudah pernah kena kasus pencurian"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"itu info yang kudapat dari database kita"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Terima kasih detektif greys"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"*sigh* apakah dia sudah berkata apapun?"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"selain menolak tuduhan? dia tidak mau berbicara"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"baiklah, biarkan pengacara yang berbicara untuk dia, ayo bawa ke pengadilan"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name":"Court",
+            "Content":[
+                {
+                    "Initiator":"Judge",
+                    "Dialogues":[
+                        {
+                            "Speaker":"Judge",
+                            "Text":"defendan hyde anda telah dituduh mencuri, merusak properti, dan membahayakan warga dengan membakar toko. apakah anda mengaku bersalah"
+                        },
+                        {
+                            "Speaker":"Lawyer",
+                            "Text":"yang mulia, semua bukti yang telah diberikan tidak bisa membuktikan dengan pasti pelakunya hyde"
+                        },
+                        {
+                            "Speaker":"Lawyer",
+                            "Text":"Dia memiliki alibi. Ketika kerusuhan terjadi dia berada dirumahnya, semua ini hanya asumsi karena sebuah kebetulan"
+                        },
+                        {
+                            "Speaker":"Prosecutor",
+                            "Text":"yang mulia, ini bukan sekedar kebetulan, semua bukti ini cocok dan alibi yang diberikan tidak valid karena dia tidak punya saksi mata yang bisa membuktikan dia dirumah"
+                        },
+                        {
+                            "Speaker":"Prosecutor",
+                            "Text":"Lagipula dia sudah memiliki riwayat membuat kerusuhan, secara tidak langsung membuktikan dia pelakunya"
+                        },
+                        {
+                            "Speaker":"Lawyer",
+                            "Text":"yang mulia pria ini sudah melewati batas!! tolong ambil aksi disiplin"
+                        },
+                        {
+                            "Speaker":"Judge",
+                            "Text":"Order!, tuan prosecutor anda dilarang berbicara"
+                        },
+                        {
+                            "Speaker":"Judge",
+                            "Text":"Tuan Hyde divonis 15 tahun dipenjara, karena tidak ada saksi mata yang bisa membuktikan alibi tuan hyde, pengadilan selesai!"
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "Name":"PoliceStation4",
+            "Content":[
+                {
+                    "Initiator":"Greys",
+                    "Dialogues":[
+                        {
+                            "Speaker":"Greys",
+                            "Text":"akhirnya ditangkap juga pelakunya, warga sudah bisa tenang"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Iya, beberapa hari ini sangat melelahkan"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"anu detektif karena pelaku sudah tertangkap saya punya pengakuan, saya mau minta maaf"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"hm?, ada apa?"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"sebenarnya saya dijadikan partner di kasus ini karena Officer Mitt curiga denganmu"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"Menurut dia kau 4 hari terakhir ini sering sekali keluar kantor jauh lebih cepat dari biasanya"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"karena itu dia membutuhkan kucing untuk mengawasimu di kasus ini, sekali lagi saya minta maaf"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"Ohh, tidak apa apa justru lebih baik detektif itu tidak mudah mempercayai seseorang"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"apalagi seseorang yang memang mencurigakan"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"Terima kasih sudah mengerti detektif"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"oh maaf, saya mau ke toilet terlebih dahulu ya"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"Oh! silahkan detektif"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
