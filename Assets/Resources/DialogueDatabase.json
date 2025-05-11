@@ -24,7 +24,11 @@
                         },
                         {
                             "Speaker": "OfficerMitt",
-                            "Text": "Pencurian, kerusakan properti, dan kebakaran toko. Lagi-lagi kucing oren jadi tersangka utama. Warga sudah mulai resah"
+                            "Text": "Pencurian, kerusakan properti, dan kebakaran toko."
+                        },
+                        {
+                            "Speaker": "OfficerMitt",
+                            "Text": "Lagi-lagi kucing oren jadi tersangka utama. Warga sudah mulai resah"
                         },
                         {
                             "Speaker": "Player",
@@ -66,7 +70,11 @@
                     "Dialogues": [
                         {
                             "Speaker": "Greys",
-                            "Text": "halo detektif Jekyll, saya detektif greys saya telah diposisikan di kasus ini sebagai asisten anda"
+                            "Text": "halo detektif Jekyll, saya detektif greys"
+                        },
+                        {
+                            "Speaker": "Greys",
+                            "Text": "saya telah diposisikan di kasus ini sebagai asisten anda"
                         },
                         {
                             "Speaker": "Player",
@@ -87,7 +95,12 @@
                     "Dialogues": [
                         {
                             "Speaker": "Fisherman",
-                            "Text": "Detektif! Toko saya dirampok! Satu kotak ikan asin hilang dan banyak kotak yang rusak!"
+                            "Text": "Detektif! Toko saya dirampok!"
+
+                        },
+                        {
+                            "Speaker": "Fisherman",
+                            "Text": "Satu kotak ikan asin hilang dan banyak kotak yang rusak!"
 
                         },
                         {
@@ -96,7 +109,11 @@
                         },
                         {
                             "Speaker":"Fisherman",
-                            "Text":"tentu saja! Si oren itu pikir saya tidak melihatnya merusak kotak kotak saya dan mengambil ikan, setelah itu dia lari entah kemana"
+                            "Text":"tentu saja! Si oren itu pikir saya tidak melihatnya merusak kotak kotak saya"
+                        },
+                        {
+                            "Speaker":"Fisherman",
+                            "Text":"dan mengambil ikan, setelah itu dia lari entah kemana"
                         },
                         {
                             "Speaker":"Player",
@@ -104,7 +121,11 @@
                         },
                         {
                             "Speaker":"Player",
-                            "Text": "(seperti kasus pencarian pada umumnya) Baiklah akan kami catat, terimakasih informasinya"
+                            "Text": "(seperti kasus pencarian pada umumnya)"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text": "Baiklah akan kami catat, terimakasih informasinya"
                         },
                         {
                             "Speaker":"Player",
@@ -122,11 +143,19 @@
                     "Dialogues":[
                         {
                             "Speaker": "Greys",
-                            "Text": "Halo! saya detektif greys dan ini partner saya detektif jekyll dari kantor polisi, boleh tolong beri kronologi kejadian disini?"
+                            "Text": "Halo! saya detektif greys dan ini partner saya detektif jekyll dari kantor polisi,"
+                        },
+                        {
+                            "Speaker": "Greys",
+                            "Text": "boleh tolong beri kronologi kejadian disini?"
                         },
                         {
                             "Speaker":"ShopOwner",
-                            "Text":"Boleh sekali pak, pada malam itu saya mau menutup toko, tiba tiba saya mendengar suara di luar"
+                            "Text":"Boleh sekali pak, pada malam itu saya mau menutup toko"
+                        },
+                        {
+                            "Speaker":"ShopOwner",
+                            "Text":"tiba tiba saya mendengar suara yang berisik di luar"
                         },
                         {
                             "Speaker":"ShopOwner",
@@ -186,7 +215,11 @@
                         },
                         {
                             "Speaker":"Player",
-                            "Text":"sebaiknya kita kembali ke kantor terlebih dahulu, kita periksa ulang bukti yang sudah dikumpulkan"
+                            "Text":"sebaiknya kita kembali ke kantor terlebih dahulu,"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"kita periksa ulang bukti yang sudah dikumpulkan"
                         },
                         {
                             "Speaker":"Greys",
@@ -209,7 +242,11 @@
                         },
                         {
                             "Speaker":"Greys",
-                            "Text":"sebentar, apa yang kau maksud dengan ini, mengapa kita tidak ke tempat kejadian terakhir"
+                            "Text":"sebentar, apa yang kau maksud dengan ini"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"mengapa kita tidak ke tempat kejadian terakhir?"
                         },
                         {
                             "Speaker":"Player",
@@ -217,7 +254,11 @@
                         },
                         {
                             "Speaker":"Greys",
-                            "Text":"oke..? pertama di pasar satu kotak ikan hilang dicuri serta toko diacak-acak, pedagang juga melihat dia warna oren"
+                            "Text":"oke..? pertama di pasar satu kotak ikan hilang dicuri serta toko diacak-acak"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"pedagang juga melihat pelaku merupakan kucing berwarna oren"
                         },
                         {
                             "Speaker":"Greys",
@@ -241,7 +282,11 @@
                         },
                         {
                             "Speaker":"Greys",
-                            "Text":"mengapa membuat kekacauan sebesar ini?, mencuri ikan tetapi merusak toko?, membakar tempat? tidak masuk akal"
+                            "Text":"mengapa membuat kekacauan sebesar ini?, mencuri ikan tetapi merusak toko?"
+                        },
+                        {
+                            "Speaker":"Greys",
+                            "Text":"membakar tempat? sama sekali tidak masuk akal"
                         },
                         {
                             "Speaker":"Player",
@@ -291,11 +336,19 @@
                         },
                         {
                             "Speaker":"Player",
-                            "Text":"satu satunya petunjuk yang ada hanya warna pelakunya, oren tidak ada petunjuk yang mengarah ke identitas pelakunya"
+                            "Text":"satu satunya petunjuk yang ada hanya warna pelakunya, oren"
+                        },
+                        {
+                            "Speaker":"Player",
+                            "Text":"tidak ada petunjuk lain yang mengarah ke identitas pelakunya"
                         },
                         {
                             "Speaker":"Bartender",
-                            "Text":"heh, memang oren oren itu selalu saja berulah. tetapi.. saya jadi teringat sesuatu"
+                            "Text":"heh, memang oren oren itu selalu saja berulah."
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"tetapi.. saya jadi teringat sesuatu"
                         },
                         {
                             "Speaker":"Player",
@@ -311,7 +364,11 @@
                         },
                         {
                             "Speaker":"Bartender",
-                            "Text":"*berbisik*ia setiap hari datang dan biasanya selalu memojok dan menutup diri, dan Ketika kejadian kemarin berlangsung dia tidak ada disini"
+                            "Text":"*berbisik*ia setiap hari datang dan biasanya selalu memojok dan menutup diri"
+                        },
+                        {
+                            "Speaker":"Bartender",
+                            "Text":"dan Ketika kejadian kemarin berlangsung dia tidak ada disini"
                         },
                         {
                             "Speaker":"Bartender",
@@ -445,7 +502,11 @@
                     "Dialogues":[
                         {
                             "Speaker":"Judge",
-                            "Text":"defendan hyde anda telah dituduh mencuri, merusak properti, dan membahayakan warga dengan membakar toko. apakah anda mengaku bersalah"
+                            "Text":"defendan hyde anda telah dituduh mencuri, merusak properti, dan membahayakan warga dengan membakar toko"
+                        },
+                        {
+                            "Speaker":"Judge",
+                            "Text":"apakah anda mengaku bersalah"
                         },
                         {
                             "Speaker":"Lawyer",
@@ -453,11 +514,19 @@
                         },
                         {
                             "Speaker":"Lawyer",
-                            "Text":"Dia memiliki alibi. Ketika kerusuhan terjadi dia berada dirumahnya, semua ini hanya asumsi karena sebuah kebetulan"
+                            "Text":"Dia memiliki alibi. Ketika kerusuhan terjadi dia berada dirumahnya"
+                        },
+                        {
+                            "Speaker":"Lawyer",
+                            "Text":"semua ini hanya asumsi karena sebuah kebetulan"
                         },
                         {
                             "Speaker":"Prosecutor",
-                            "Text":"yang mulia, ini bukan sekedar kebetulan, semua bukti ini cocok dan alibi yang diberikan tidak valid karena dia tidak punya saksi mata yang bisa membuktikan dia dirumah"
+                            "Text":"yang mulia, ini bukan sekedar kebetulan, semua bukti ini cocok dan alibi yang diberikan tidak valid"
+                        },
+                        {
+                            "Speaker":"Prosecutor",
+                            "Text":"karena dia tidak punya saksi mata yang bisa membuktikan dia dirumah"
                         },
                         {
                             "Speaker":"Prosecutor",
@@ -473,7 +542,11 @@
                         },
                         {
                             "Speaker":"Judge",
-                            "Text":"Tuan Hyde divonis 15 tahun dipenjara, karena tidak ada saksi mata yang bisa membuktikan alibi tuan hyde, pengadilan selesai!"
+                            "Text":"karena tidak ada saksi mata yang bisa membuktikan alibi tuan hyde"
+                        },
+                        {
+                            "Speaker":"Judge",
+                            "Text":"Tuan Hyde divonis 15 tahun dipenjara, pengadilan selesai!"
                         }
 
                     ]
