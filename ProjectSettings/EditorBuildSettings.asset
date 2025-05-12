@@ -6,35 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ef1fc19b37e5bee46a99500af193bb71
+  - enabled: 1
     path: Assets/Scenes/PoliceStation1.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Bar.unity
-    guid: 1ef5aff10732cb4409a3853559975ca2
-  - enabled: 1
-    path: Assets/Scenes/Court.unity
-    guid: 50c6f557d402b35459ddced6207efcb3
+    guid: ffc48a5b6ace95340b8b565d5abc7636
   - enabled: 1
     path: Assets/Scenes/Market.unity
     guid: 160abe534b53032429f2d8e23306d211
   - enabled: 1
-    path: Assets/Scenes/PoliceStation2.unity
-    guid: c36ee68490cedc84895ed54addc9800c
-  - enabled: 1
-    path: Assets/Scenes/PoliceStation3.unity
-    guid: 34db38c04cdb7b14fb74ac04ad70c148
-  - enabled: 1
-    path: Assets/Scenes/PoliceStation4.unity
-    guid: 6e89128989fd28e4f8c9ed39e3edb0a3
-  - enabled: 1
     path: Assets/Scenes/ToolShop.unity
     guid: ccb21fd3a99bcaf4698d2026d35d7b82
   - enabled: 1
+    path: Assets/Scenes/PoliceStation2.unity
+    guid: af0ced3e7508aa445bfb91222d6643b9
+  - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: 1ef5aff10732cb4409a3853559975ca2
+  - enabled: 1
+    path: Assets/Scenes/PoliceStation3.unity
+    guid: a25c79608db2706469ce1b9bf12ce8c3
+  - enabled: 1
+    path: Assets/Scenes/Court.unity
+    guid: 50c6f557d402b35459ddced6207efcb3
+  - enabled: 1
+    path: Assets/Scenes/PoliceStation4.unity
+    guid: fc1c2eaaf56b56e4bb6b0805fad4dd60
+  - enabled: 1
     path: Assets/Scenes/Cutscene.unity
     guid: a1dcaa3744c11e6478eb46a9cfbbf4c8
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: ef1fc19b37e5bee46a99500af193bb71
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
