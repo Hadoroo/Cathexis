@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         dialoguePanel.transform.localScale = Vector3.zero;
-        
+
         // Fix: Use the actual method instead of OnContinueClick
         continueButton.onClick.AddListener(() =>
         {
@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour
         // Start scale in animation
         if (scaleCoroutine != null) StopCoroutine(scaleCoroutine);
         scaleCoroutine = StartCoroutine(ScalePanel(true));
-        
+
         DisplayCurrentLine();
         playerController.SetDialogueState(true);
     }
@@ -80,8 +80,14 @@ public class DialogueManager : MonoBehaviour
     {
         var currentDialogue = currentNPC.dialogueDictionary[currentDialogueSet];
         var line = currentDialogue.dialogues[currentLine];
-
-        speakerText.text = line.speaker;
+        if (line.speaker == "Player")
+        {
+            speakerText.text = "Jekyll";
+        }
+        else
+        {
+            speakerText.text = line.speaker;
+        }
         charImage.sprite = Resources.Load<Sprite>(line.speaker);
         charImage.SetNativeSize();
 
@@ -130,7 +136,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (scaleCoroutine != null) StopCoroutine(scaleCoroutine);
         scaleCoroutine = StartCoroutine(ScalePanel(false));
-        
+
         playerController.SetDialogueState(false);
     }
 
@@ -149,7 +155,7 @@ public class DialogueManager : MonoBehaviour
     IEnumerator ScalePanel(bool show)
     {
         if (show) dialoguePanel.SetActive(true);
-        
+
         float timer = 0f;
         Vector3 startScale = show ? Vector3.zero : Vector3.one;
         Vector3 endScale = show ? Vector3.one : Vector3.zero;

@@ -1707,6 +1707,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 383477351}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleNPCInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1622887083}
+    - target: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+      propertyPath: OnPlayerInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: NPCDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8185985754271539692, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
       propertyPath: m_Name
       value: Greys
@@ -1756,6 +1788,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+--- !u!114 &1622887083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4426720414413463066, guid: c09c5472cdb45124c8367ea20514ec09, type: 3}
+  m_PrefabInstance: {fileID: 1622887082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9054bc6ade4310043be0b0418c8a71f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1719997613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,10 +1994,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 204908502387484078, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
-      propertyPath: switchSceneTrigger
-      value: 
-      objectReference: {fileID: 1555496670}
     - target: {fileID: 1892569520092014814, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1965,11 +2004,11 @@ PrefabInstance:
       objectReference: {fileID: 1216647070}
     - target: {fileID: 7685317965215956555, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.82
+      value: 10.84
       objectReference: {fileID: 0}
     - target: {fileID: 7685317965215956555, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.15
+      value: -2.19
       objectReference: {fileID: 0}
     - target: {fileID: 7685317965215956555, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2248,6 +2287,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f342a57ee7a21942a18171df05ca9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2019345995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019345996}
+  m_Layer: 0
+  m_Name: GameManagerPos
+  m_TagString: GameManagerSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019345996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019345995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.71, y: -2.41, z: -0.013681817}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2115713639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,3 +2448,4 @@ SceneRoots:
   - {fileID: 285411616}
   - {fileID: 479732610}
   - {fileID: 2006706782}
+  - {fileID: 2019345996}

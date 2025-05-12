@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneOrder: []
-  switchSceneTrigger: {fileID: 0}
 --- !u!114 &5522754013824396186
 MonoBehaviour:
   m_ObjectHideFlags: 0

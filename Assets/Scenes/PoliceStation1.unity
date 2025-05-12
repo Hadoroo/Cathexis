@@ -1291,25 +1291,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1083735924 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1892569520092014814, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
-  m_PrefabInstance: {fileID: 1796938342}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1083735927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083735924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccd54eb27343c0d4580a83c7846cbcc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeImage: {fileID: 1216647070}
-  fadeDuration: 1
 --- !u!1 &1097461037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,11 +1835,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7685317965215956555, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3335254
+      value: 10.63
       objectReference: {fileID: 0}
     - target: {fileID: 7685317965215956555, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3996551
+      value: -2.36
       objectReference: {fileID: 0}
     - target: {fileID: 7685317965215956555, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1895,11 +1876,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1892569520092014814, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1083735927}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b06b7ab42afa8a44a787d4da40cd40b, type: 3}
+--- !u!1 &1856589227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856589228}
+  m_Layer: 0
+  m_Name: GameManagerPos
+  m_TagString: GameManagerSpawnPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856589228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856589227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.71, y: -2.41, z: -0.013681817}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1924571867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,3 +2436,4 @@ SceneRoots:
   - {fileID: 1796938342}
   - {fileID: 8956379196031946114}
   - {fileID: 109546205}
+  - {fileID: 1856589228}

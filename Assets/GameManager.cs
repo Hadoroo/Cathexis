@@ -1,71 +1,111 @@
 using UnityEngine;
+using UnityEngine.Video; // Required for VideoPlayer
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
     public List<string> sceneOrder;
-
-    public Collider2D switchSceneTrigger;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private SceneTransition sceneTransition;
+    private const string SpawnPointTag = "GameManagerSpawnPoint";
+    private VideoPlayer videoPlayer; // Reference to the VideoPlayer in "Cutscene"
 
     void Awake()
     {
-        if (Instance == null)
+        sceneOrder = new List<string> { "MainMenu", "PoliceStation1", "Market", "ToolShop",
+                                      "PoliceStation2", "Bar", "PoliceStation3",
+                                      "Court", "PoliceStation4", "Cutscene" };
+        
+        sceneTransition = FindObjectOfType<SceneTransition>();
+        if (sceneTransition == null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            sceneOrder = new List<string> { "PoliceStation1", "Market", "ToolShop",
-                                          "PoliceStation2", "Bar", "PoliceStation3",
-                                          "Court", "PoliceStation4" };
+            Debug.LogError("No SceneTransition found in the scene!");
+        }
+
+        // Find the spawn point and move to it
+        GameObject spawnPoint = GameObject.FindWithTag(SpawnPointTag);
+        if (spawnPoint != null)
+        {
+            transform.position = spawnPoint.transform.position;
         }
         else
         {
-            Destroy(gameObject);
+            Debug.LogWarning($"No GameObject with tag '{SpawnPointTag}' found in the scene.");
+        }
+
+        // If this is the Cutscene, get the VideoPlayer and set up its completion event
+        if (SceneManager.GetActiveScene().name == "Cutscene")
+        {
+            videoPlayer = FindObjectOfType<VideoPlayer>();
+            if (videoPlayer != null)
+            {
+                videoPlayer.loopPointReached += OnVideoEnd; // Trigger when video ends
+            }
+            else
+            {
+                Debug.LogError("No VideoPlayer found in the Cutscene!");
+            }
         }
     }
 
     void Start()
     {
-        // Start with fade in when scene loads
-        StartCoroutine(SceneTransition.Instance.FadeIn());
+        if (sceneTransition != null)
+        {
+            StartCoroutine(sceneTransition.FadeIn());
+        }
     }
 
-    void Update()
+    // Called when the video finishes playing
+    private void OnVideoEnd(VideoPlayer vp)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        StartCoroutine(ReturnToMainMenu());
+    }
+
+    private IEnumerator ReturnToMainMenu()
+    {
+        if (sceneTransition != null)
         {
-            StartCoroutine(LoadNextSceneWithFade());
+            yield return sceneTransition.FadeOut(); // Fade to black
         }
+        SceneManager.LoadScene("MainMenu"); // Load Main Menu
     }
 
     public IEnumerator LoadNextSceneWithFade()
     {
-        // Fade to black
-        yield return SceneTransition.Instance.FadeOut();
+        if (sceneTransition == null) yield break;
+        
+        yield return sceneTransition.FadeOut();
 
         string currentScene = SceneManager.GetActiveScene().name;
         int currentIndex = sceneOrder.IndexOf(currentScene);
 
         if (currentIndex >= 0 && currentIndex < sceneOrder.Count - 1)
         {
-            // SceneManager.LoadScene will trigger OnSceneLoaded which handles fade-in
             SceneManager.LoadScene(sceneOrder[currentIndex + 1]);
         }
         else
         {
             Debug.Log("No next scene available");
-            // Manually fade in if not changing scenes
-            yield return SceneTransition.Instance.FadeIn();
+            yield return sceneTransition.FadeIn();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
         if (other.CompareTag("Player"))
         {
             StartCoroutine(LoadNextSceneWithFade());
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe to prevent memory leaks
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached -= OnVideoEnd;
         }
     }
 }
