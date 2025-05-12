@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423ac6176ce8664e97d91c57031c58c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 1849494083}
   dialoguePanel: {fileID: 1882330669}
   speakerText: {fileID: 12429049}
   dialogueText: {fileID: 1551633210}
@@ -2982,6 +2982,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d6880181875574a861eb6811f62839, type: 3}
+--- !u!114 &1849494083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7633154629422377008, guid: b4d6880181875574a861eb6811f62839, type: 3}
+  m_PrefabInstance: {fileID: 1849494082}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f342a57ee7a21942a18171df05ca9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1862693739
 GameObject:
   m_ObjectHideFlags: 0
