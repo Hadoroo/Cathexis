@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public List<string> sceneOrder;
+
+    public Collider2D switchSceneTrigger;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
@@ -57,6 +59,13 @@ public class GameManager : MonoBehaviour
             Debug.Log("No next scene available");
             // Manually fade in if not changing scenes
             yield return SceneTransition.Instance.FadeIn();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag("Player"))
+        {
+            StartCoroutine(LoadNextSceneWithFade());
         }
     }
 }
