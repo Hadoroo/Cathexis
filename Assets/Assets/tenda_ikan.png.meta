@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tenda_ikan_0: -5937901561929019687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

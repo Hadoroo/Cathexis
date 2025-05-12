@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hill_day 1_0: -445612235501716065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

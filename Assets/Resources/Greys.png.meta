@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 11c5a3b059de6f44299a437356ae1334
+guid: e38328b0a2ae9bd4c9b84b9b197b6657
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1270604462627814896
-    second: detective_head_x3_0
+      213: 8781009396582878920
+    second: greys_head_x3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: detective_head_x3_0
+      name: greys_head_x3_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 95
-        width: 104
+        x: 41
+        y: 98
+        width: 107
         height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0120b0329f7ed5ee0800000000000000
-      internalID: -1270604462627814896
+      spriteID: 8ce80bcb5896cd970800000000000000
+      internalID: 8781009396582878920
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      detective_head_x3_0: -1270604462627814896
+      greys_head_x3_0: 8781009396582878920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

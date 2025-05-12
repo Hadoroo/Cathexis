@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toko_perkakas_0: -5597960218062031419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

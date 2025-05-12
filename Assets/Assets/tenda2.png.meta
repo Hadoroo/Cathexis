@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tenda2_0: 4599077600551142034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

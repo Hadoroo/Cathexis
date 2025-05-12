@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hill_dawn_0: 2946100560270814711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

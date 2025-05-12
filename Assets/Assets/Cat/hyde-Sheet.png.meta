@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 9dea8adcceff0cc4783a8e912038fc30
+guid: b69925c0da6a4e9438ee44305c800ea2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5929873931085873810
-    second: toolshopkeeper_head_x3_0
+      213: 4474998635622835321
+    second: hyde-Sheet_0
+  - first:
+      213: -6863653638779458660
+    second: hyde-Sheet_1
+  - first:
+      213: 7846898501736632166
+    second: hyde-Sheet_2
+  - first:
+      213: -459606712333907851
+    second: hyde-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toolshopkeeper_head_x3_0
+      name: hyde-Sheet_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 98
-        width: 104
-        height: 92
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6df6c6d31bd4bda0800000000000000
-      internalID: -5929873931085873810
+      spriteID: 97428aeac836a1e30800000000000000
+      internalID: 4474998635622835321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyde-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bab3771676fb0a0800000000000000
+      internalID: -6863653638779458660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyde-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f8e88dc98c5ec60800000000000000
+      internalID: 7846898501736632166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hyde-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578c3f651262f99f0800000000000000
+      internalID: -459606712333907851
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8eba3f9f7b6cfb1418633d8c3945a945
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hyde-Sheet_0: 4474998635622835321
+      hyde-Sheet_1: -6863653638779458660
+      hyde-Sheet_2: 7846898501736632166
+      hyde-Sheet_3: -459606712333907851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

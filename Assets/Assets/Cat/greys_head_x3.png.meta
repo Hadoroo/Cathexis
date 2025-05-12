@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f0d076fd9687ce41bbaf317a1e7e39f
+guid: da63045a5050756459de4b5b2f473625
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1270604462627814896
-    second: detective_head_x3_0
+      213: 8781009396582878920
+    second: greys_head_x3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: detective_head_x3_0
+      name: greys_head_x3_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 95
-        width: 104
+        x: 41
+        y: 98
+        width: 107
         height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0120b0329f7ed5ee0800000000000000
-      internalID: -1270604462627814896
+      spriteID: 8ce80bcb5896cd970800000000000000
+      internalID: 8781009396582878920
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      greys_head_x3_0: 8781009396582878920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

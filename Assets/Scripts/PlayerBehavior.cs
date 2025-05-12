@@ -21,6 +21,13 @@ public class PlayerBehavior : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isInDialogue)
+        {
+            rb.linearVelocity = Vector2.zero; // Completely stop movement
+            animator.SetBool("isWalking", false);
+            return;
+        }
+
         // Horizontal movement
         float inputX = Input.GetAxisRaw("Horizontal");
 
@@ -39,9 +46,17 @@ public class PlayerBehavior : MonoBehaviour
         if (!isInDialogue)rb.linearVelocity = new Vector2(inputX * moveSpeed, rb.linearVelocity.y);
     }
 
-
-    public void setInDialogue()
+    public void SetDialogueState(bool inDialogue)
     {
-        isInDialogue = !isInDialogue;
+        isInDialogue = inDialogue;
+        rb.linearVelocity = Vector2.zero; // Stop immediately when dialogue starts
+        
+        // Optional: Force facing the NPC
+        if (inDialogue)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Sign(DialogueManager.Instance.currentNPC.transform.position.x - transform.position.x);
+            transform.localScale = scale;
+        }
     }
 }

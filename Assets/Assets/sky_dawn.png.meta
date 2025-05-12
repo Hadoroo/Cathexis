@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sky_dawn_0: 8319736289911179275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
