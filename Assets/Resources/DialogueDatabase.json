@@ -320,7 +320,7 @@
                         },
                         {
                             "Speaker":"Player",
-                            "Text":"*sigh*"
+                            "Text":"<b>sigh</b>"
                         },
                         {
                             "Speaker":"Bartender",
@@ -364,7 +364,7 @@
                         },
                         {
                             "Speaker":"Bartender",
-                            "Text":"*berbisik*ia setiap hari datang dan biasanya selalu memojok dan menutup diri"
+                            "Text":"<b>berbisik</b> ia setiap hari datang dan biasanya selalu memojok dan menutup diri"
                         },
                         {
                             "Speaker":"Bartender",
@@ -372,7 +372,7 @@
                         },
                         {
                             "Speaker":"Bartender",
-                            "Text":"*menunjuk* lihat, itu dia yang sedang dipojok"
+                            "Text":"<b>menunjuk</b> lihat, itu dia yang sedang dipojok"
                         },
                         {
                             "Speaker":"Player",
@@ -390,7 +390,7 @@
                         },
                         {
                             "Speaker":"Hyde",
-                            "Text":"*mabuk*hah, jangan ganggu"
+                            "Text":"<b>mabuk</b>hah, jangan ganggu"
                         },
                         {
                             "Speaker":"Player",
@@ -426,7 +426,7 @@
                         },
                         {
                             "Speaker":"Hyde",
-                            "Text":"*kaget* anda polisi!? *lari*"
+                            "Text":"<b>kaget</b> anda polisi!? <b>lari</b>"
                         },
                         {
                             "Speaker":"Player",
@@ -438,7 +438,7 @@
                         },
                         {
                             "Speaker":"Greys",
-                            "Text":"*menabrak hyde*"
+                            "Text":"<b>menabrak hyde</b>"
                         },
                         {
                             "Speaker":"Player",
@@ -480,7 +480,7 @@
                         },
                         {
                             "Speaker":"Player",
-                            "Text":"*sigh* apakah dia sudah berkata apapun?"
+                            "Text":"<b>sigh</b> apakah dia sudah berkata apapun?"
                         },
                         {
                             "Speaker":"Greys",
