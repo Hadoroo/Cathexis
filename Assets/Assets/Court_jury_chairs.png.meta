@@ -136,6 +136,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -372,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Court_jury_chairs_0: -4072194749342348359
+      Court_jury_chairs_1: -2113893722687072614
+      Court_jury_chairs_2: -8396173055658839171
+      Court_jury_chairs_3: -3157758837873339615
+      Court_jury_chairs_4: -3383963528298471177
+      Court_jury_chairs_5: 7783292532782268022
+      Court_jury_chairs_6: 7366248642437991811
+      Court_jury_chairs_7: -6523631494319805455
+      Court_jury_chairs_8: -7300688002091313409
+      Court_jury_chairs_9: 351606777671271010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
