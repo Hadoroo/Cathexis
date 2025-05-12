@@ -26,6 +26,11 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private bool isTyping = false;
 
+    [Header("Panel Animation")]
+    public float scaleDuration = 0.3f;
+    public AnimationCurve scaleCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    private Coroutine scaleCoroutine;
+
     void Awake()
     {
         if (Instance == null)
@@ -41,6 +46,9 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         dialoguePanel.SetActive(false);
+        dialoguePanel.transform.localScale = Vector3.zero;
+        
+        // Fix: Use the actual method instead of OnContinueClick
         continueButton.onClick.AddListener(() =>
         {
             if (isTyping) skipTyping = true;
@@ -60,7 +68,10 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        dialoguePanel.SetActive(true);
+        // Start scale in animation
+        if (scaleCoroutine != null) StopCoroutine(scaleCoroutine);
+        scaleCoroutine = StartCoroutine(ScalePanel(true));
+        
         DisplayCurrentLine();
         playerController.SetDialogueState(true);
     }
@@ -117,8 +128,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        dialoguePanel.SetActive(false);
-        playerController.SetDialogueState(false); // Unfreeze player
+        if (scaleCoroutine != null) StopCoroutine(scaleCoroutine);
+        scaleCoroutine = StartCoroutine(ScalePanel(false));
+        
+        playerController.SetDialogueState(false);
     }
 
     public void HandleNPCInteraction(NPCDialogue npc)
@@ -131,5 +144,25 @@ public class DialogueManager : MonoBehaviour
         {
             ContinueDialogue();
         }
+    }
+
+    IEnumerator ScalePanel(bool show)
+    {
+        if (show) dialoguePanel.SetActive(true);
+        
+        float timer = 0f;
+        Vector3 startScale = show ? Vector3.zero : Vector3.one;
+        Vector3 endScale = show ? Vector3.one : Vector3.zero;
+
+        while (timer < scaleDuration)
+        {
+            timer += Time.deltaTime;
+            float t = scaleCurve.Evaluate(timer / scaleDuration);
+            dialoguePanel.transform.localScale = Vector3.Lerp(startScale, endScale, t);
+            yield return null;
+        }
+
+        dialoguePanel.transform.localScale = endScale;
+        if (!show) dialoguePanel.SetActive(false);
     }
 }
